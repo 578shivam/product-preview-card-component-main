@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap" rel="stylesheet">
+  
+  
+  <title>Frontend Mentor | Product preview card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+    *{
+      margin: 0;
+      padding: 0;
+      
+    }
+    body{
+      background-color: hsl(30, 38%, 92%);
+      margin: 20px;
+      padding: 20px;
+      font-family: "Fraunces", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-variation-settings:
+    "SOFT" 0,
+    "WONK" 0;
+      
+
+
+  
+      
+    }
+    .container{
+      display: grid;
+    grid-template-columns: 311px 274px;
+    justify-content: space-between;
+    align-items: center;
+    height: 487px;
+    width: 618px;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 10px;
+    margin: 8vh 50vh 9vh;;
+    }
+   
+    .photo img{
+      width: 323px;
+    border-radius: 10px 0px 0px 10px;
+    height: 486px;
+    }
+    .text-1{
+      margin: 20px;
+    }
+  
+    
+    .text-1 p{
+      margin: 10px;
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: 400;
+    color: #9d9ea5;
+    font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+    }
+   
+    .money{
+      display: flex;
+    justify-content: space-around;
+    align-items: center;
+    }
+    .money h1{
+      color:#397760;
+    }
+    .boder{
+      margin-top: -22px ;
+    }
+   
+    .boder button{
+      width: 200px;
+      height: 40px;
+      border-radius: 5px;
+      border: solid 1px green;
+      background-color:#3d8168;
+      color: white;
+      cursor: pointer;
+      margin-top: 40px;
+    }
+    .boder :hover{
+      background-color:#193f30
+    }
+    .top h1{
+      margin-top: 20px;
+    } 
+
+    .boder img{
+      position: absolute;
+    top: 32rem;
+    right: 44rem;
+    }
+    @media (width <600px) {
+      .container{
+        display: flex;
+    flex-direction: column;
+    height: 871px;
+    width: 327px;
+    background-color: white;
+      }
+      .photo img{
+        width: 326px;
+        height: 399px;
+        border-radius: 10px 10px 0px 0px;
+
+      }
+      .top{
+        margin-bottom: 5rem;
+      }
+      .text-1 p{
+        margin-bottom: 10px;
+      }
+      .money{
+        display: flex;
+    justify-self: flex-end;
+    justify-content: flex-start;
+    align-items: stretch;
+}
+.boder{
+  display: flex;
+  justify-content: center;
+}
+.boder button{
+  width: 250px;
+}
+body{
+  display: flex;
+  justify-content: center;
+}
+      }
+      
+      
+
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="photo">
+      <source media="(m-width:600px)" srcset="image-product-mobile.jpg">
+      <img src="images/image-product-desktop.jpg" alt="style="width:auto;>
+    </div>
+    <div class="text-1">
+      <div class="top">
+      <P style="letter-spacing: 4px;">PERFUMER</P>
+      <h1>Gabrielle Essence Eau De Parfum</h1>
+      </div>
+      <p>
+        A floral, solar and voluptuous interpretation composed by Olivier Polge, 
+        Perfumer-Creator for the House of CHANEL.</p>
+        <div class="money">
+          <h1>$149.99</h1>
+          <p><del>$169.99</del></p>
+        </div>
+        <div class="boder">
+          <img src="images/icon-cart.svg" alt="">
+          <button>Add to Cart</button>
+        </div>
+    </div>
+   
+  </div>
+
+ 
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">shivam kumar</a>.
+  </div>
+</body>
+</html>
